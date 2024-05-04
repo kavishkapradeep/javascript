@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="text1">hacking.lk</p>
+        <button id ="button1">
+            Click mee
+        </button>
+
+        <script>
+           /* document.getElementById("button1").onclick = function () {
+                document.getElementById("text1").innerHTML="hi kp";//changing button to kp 
+            }*/
+
+            let text =document.getElementById("text1").innerHTML;
+            document.getElementById("button1").onclick = function () {
+                document.getElementById("text1").innerHTML= text +" kp";//add text with button text 
+            }
+
+
+
+            
+        </script>
+
+    </body>
+
+</html>

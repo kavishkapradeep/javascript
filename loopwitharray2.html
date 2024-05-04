@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Loop with Array 02</title>
+    </head>
+    <body>
+        <div id="tweetDiv"></div>
+
+        <script>
+            var tweetString=" ";
+            var tweet=["make a cofee","wash a cloth","make a tea"]
+
+            for(var i=0;i<tweet.length;i++){
+                tweetString=tweetString+"<p>"+tweet[i]+"</p>"
+
+            }
+            document.getElementById("tweetDiv").innerHTML=tweetString;
+        </script>
+    </body>
+</html>

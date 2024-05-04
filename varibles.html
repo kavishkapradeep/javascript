@@ -1,0 +1,35 @@
+<html>
+ <head>
+    <TITle>VARIBLES</TITle>
+ </head>
+
+ <body>
+
+    <input type="text" id="textinput">
+    <button id="textchange">Update</button>
+ <p id="textparagraph">kavishka pradeep</p>
+    <script>
+        /*var name="kavishka";
+        alert(name);
+        var kavi=10;
+        var kavi=20;
+        alert(kavi);
+       */
+      document.getElementById("textchange").onclick=function(){
+        var name="";
+        var word="Hello"
+        name =document.getElementById("textinput").value;
+        document.getElementById("textparagraph").innerHTML=word+" "+name; 
+        alert(name);
+
+       
+      }
+
+      
+
+
+    </script>
+     
+ </body>
+
+</html>

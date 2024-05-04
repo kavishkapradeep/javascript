@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>RANDOM NUMBER guess</title>
+    </head>
+
+    <body>
+        <p>Which number is in your mind</p>
+
+        <p><input type="text" id="myNumber1"></p>
+        <p><button id="guess">Guess!</button></p>
+
+        <script>
+            document.getElementById("guess").onclick= function(){
+                var myNumber =document.getElementById("myNumber1").value;
+                var numberOfGuess=1;
+                var gotIt= false;
+
+                while(gotIt==false){
+                    var guess =Math.random();
+                    guess=guess*10;
+                    guess=Math.floor(guess);
+
+                    if (guess==myNumber) {
+                        gotIt=true;
+                        alert("Got it,Your NUmber is:"+guess+" !,it took me "+numberOfGuess+" guess")
+                    } else {
+                        numberOfGuess++;
+                    }
+
+                }
+            }
+        </script>
+        
+    </body>
+</html>
